@@ -189,4 +189,29 @@ You should now be able to access your project using the URL `https://project1.we
 You should now be able to access your project using the URL `https://project1.web` in your browser.
 
 ##
-## **[NatadTech.com](https://natadtech.com)**
+## **Note:**
+##### Specifying the Open SSL Configuration File when generating.
+##### Example
+````
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout project1.web.key -out project1.web.crt -config "D:\laragon\bin\apache\httpd-2.4.58-240131-win64-VS17\conf\openssl.cnf"
+````
+
+##### XAMPP
+On the XAMPP installations, the openssl.cnf file usually can be found here:
+``C:\xampplite\apache\conf\openssl.cnf``
+
+If you dont have your XAMPP installed on the C drive, just edit the beginning of the path. In some cases, Apache version number is included in the path too, for example:
+``D:\xampplite\apache2.4.9\conf\openssl.cnf``
+
+##### WAMP
+On the WAMP installations, the openssl.cnf file usually can be found here:
+``C:\wamp\bin\apache2.4.9\conf\openssl.cnf``
+
+##### MAMP
+On the MAMP installations, the openssl.cnf file usually can be found here:
+``C:\MAMP\bin\apache\conf\openssl.cnf``
+
+##### Laragon
+On the Laragon installations, the openssl.cnf file usually can be found here:
+``C:\laragon\bin\apache\httpd-2.4.47-win64-VS16*\conf\openssl.cnf``
+
